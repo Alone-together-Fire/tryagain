@@ -1,0 +1,74 @@
+% ctrl+R ctrl+T
+% %输入成绩-switch
+% userInput = input('请输入一个百分制成绩: ', 's'); 
+% number = str2double(userInput); %获取键盘输入的数据
+% if isnan(number)%如果输入的不是数字
+%     disp('请输入正确的数'); 
+% else 
+%     if number >= 0 && number <= 100%如果输入了正确的百分制成绩
+%         disp(['该学生的成绩为: ' num2str(number)]);%显示成绩
+%         switch number
+%             case {90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100}
+%                 disp('等级为A')
+%             case {80, 81, 82, 83, 84, 85, 86, 87, 88, 89}
+%                 disp('等级为B')
+%             case {70, 71, 72, 73, 74, 75, 76, 77, 78, 79}
+%                 disp('等级为C')
+%             case {60, 61, 62, 63, 64, 65, 66, 67, 68, 69}
+%                 disp('等级为D')
+%             otherwise
+%                 disp('等级为E')
+%         end
+%     else%如果输入的数不在0-100的范围内
+%         disp('请输入正确的百分制成绩'); 
+%     end
+% end
+% 
+% %输入成绩-if
+% userInput = input('请输入一个百分制成绩: ', 's'); 
+% number = str2double(userInput); %获取键盘输入的数据
+% if isnan(number)%如果输入的不是数字
+%     disp('请输入正确的数'); 
+% else 
+%     if number >= 0 && number <= 100%如果输入了正确的百分制成绩
+%         disp(['该学生的成绩为: ' num2str(number)]);%显示成绩
+%         if number >= 90 && number <= 100
+%             disp('等级为A')
+%         elseif number >= 80 && number <= 89
+%             disp('等级为B')
+%         elseif number >= 70 && number <= 79
+%             disp('等级为C')
+%         elseif number >= 60 && number <= 69
+%             disp('等级为D')
+%         else
+%             disp('等级为E')
+%         end
+%     else%如果输入的数不在0-100的范围内
+%         disp('请输入正确的百分制成绩'); 
+%     end
+% end
+
+%第二题-循环结构
+userInput = input('Enter a number: ', 's'); 
+n = str2double(userInput);
+disp(['You entered: ' num2str(n)]);
+
+fenmu0 = 4
+for i = 4:2:n*2
+    fenzi = fenmu0 * i * i
+    fenmu0 = fenzi
+    disp('此时=')
+    disp(fenzi)
+end
+disp('分子=')
+disp(fenzi)
+
+fenmu0 = 4
+for i = 4:2:n*2
+    fenzi = fenmu0 * i * i
+    fenmu0 = fenzi
+    disp('此时=')
+    disp(fenzi)
+end
+disp('分子=')
+disp(fenzi)
